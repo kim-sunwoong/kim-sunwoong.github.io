@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en-us">
+
+    <head>
+
+        <!-- Meta -->
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <title>Sunwoong Kim</title>
+        <meta name="description" content="">
+
+        <!-- The compiled CSS file -->
+        <link rel="stylesheet" href="css/production.css">
+
+        <!-- Web fonts -->
+        <link href="https://fonts.googleapis.com/css?family=nanumgothiccoding:400,700|Playfair+Display:900" rel="">
+
+        <!-- favicon.ico. Place these in the root directory. -->
+        <link rel="shortcut icon" href="favicon.ico">
+
+        <style>
+            #typing-text::after {
+                content: '|'; /* Blinking cursor */
+                animation: blink-caret 1s step-end infinite;
+            }
+
+            @keyframes typing {
+                from { width: 0; }
+                to { width: 100%; }
+            }
+
+            @keyframes blink-caret {
+                from, to { border-color: transparent; }
+                50% { border-color: black; }
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+    <div class="grid-row">
+
+                <!-- Header -->
+        <header class="header full-width">
+
+            <!-- Mobile header -->
+            <div class="show-on-mobile pt1 pl2 pr2 mb1">
+                <div class="border--bottom pt1">
+                    <div class="grid-row grid-row--center pb1">
+                        <div class="grid-column span-half">
+                            <!-- Mobile logo -->
+                            <div class="mb0"><img class="logo--mobile" src="img/mobile-logo.svg" alt="Viking Tours" title="Viking Tours"></div>
+                        </div>
+                        <div class="grid-column span-half align--right">
+                            <!-- Mobile social links -->
+                            <ul class="mobile-social-links list--inline">
+                                <li class="mr1"><a class="link link--default" href="https://www.twitter.com"><img class="icon" src="img/facebook.svg" alt="Facebook"></a></li>
+                                <li class="mr1"><a class="link link--default" href="https://www.instagram.com"><img class="icon" src="img/instagram.svg" alt="Instagram"></a></li>
+                                <li><a class="link link--default" href="https://www.facebook.com"><img class="icon" src="img/twitter.svg" alt="Twitter"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desktop header -->
+            <!-- Desktop logo -->
+            <h1 class="hide-on-mobile logo-container absolute block full-width align--center"><img class="logo--desktop" src="img/desktop-logo.svg" alt="Viking Tours" title="Viking Tours"></h1>
+            <!-- Social links -->
+            <ul class="pt1 no-bullets align--center hide-on-mobile">
+                <li><a class="link link--default" href="https://www.twitter.com"><img class="icon" src="img/facebook.svg" alt="Facebook"></a></li>
+                <li><a class="link link--default" href="https://www.instagram.com"><img class="icon" src="img/instagram.svg" alt="Instagram"></a></li>
+                <li><a class="link link--default" href="https://www.facebook.com"><img class="icon" src="img/twitter.svg" alt="Twitter"></a></li>
+            </ul>
+
+        </header>
+
+        <!-- Hero image -->
+        <div class="hero-container full-width show-on-mobile pt1 pl2 pr2">
+            <div class="hero full-width full-height" style="background:rgba(0,0,0,0) url(img/A7R09084.jpg) no-repeat scroll center center/cover"></div>
+        </div>
+        <div class="hide-on-mobile hero" style="background:rgba(0,0,0,0) url(img/A7R09084.jpg) no-repeat scroll center center/cover"></div>
+
+        <!-- Body -->
+        <div class="body full-width pt1 pr2 pb2 pl2">
+            <!-- Navigation -->
+            <nav class="navigation border--bottom pt1">
+                <ul class="no-bullets list--inline pb1 bold">
+                    <li class="small mr2"><a class="link link--text current" href="/">01: Who Am I</a></li>
+                    <li class="small mr2"><a class="link link--text" href="project.html">02: Project</a></li>
+                    <li class="small mr2"><a class="link link--text" href="photography.html">03: Photography</a></li>
+                    <li class="small"><a class="link link--text" href="/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- Page Content -->
+            <main class="content pt2 pb2">
+                <h2>Hi there!</h2>
+                <p id="typing-text">
+                    <!-- The text will be typed here -->
+                </p>
+            </main>
+                        <!-- Footer -->
+            <footer class="border--top pb1 pb1">
+                <p class="text--gray small mb0">&copy; <a href="https://www.sunwoongkim.com" class="link link--text">Sunwoong Kim</a> 2023. </p>
+            </footer>
+        </div><!-- end Body -->
+
+    </div>
+    <script>
+        const text = `My name is Sunwoong Kim, and I'm set to graduate with a Bachelor's degree in Management Information Systems
+from Penn State in the spring of 2024. My passion lies in the realms of data, systems, and cloud technology.
+My long-term goal is to create an offline-based platform service and B2B software business, leveraging location
+and popularity rankings as key factors in achieving success. `;
+
+        const typingTextElement = document.getElementById('typing-text');
+
+        function typeText(text, element, delay = 50) {
+            let i = 0;
+
+            function type() {
+                if (i < text.length) {
+                    element.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(type, delay);
+                } else {
+                    // Text has finished typing, remove the cursor
+                    element.innerHTML = element.innerHTML.slice(0, -1);
+                }
+            }
+
+            type();
+        }
+
+        typeText(text, typingTextElement);
+    </script>
+    </body>
+</html>
+
