@@ -5,6 +5,50 @@ html {
     -webkit-text-size-adjust: 100%
 }
 
+
+
+
+
+/* Add the CSS for the Hero section slideshow in your external CSS file */
+.hero-slideshow {
+    display: flex;
+    width: 300%; /* Adjust the width based on the number of images */
+    animation: slide 15s linear infinite; /* Adjust the animation duration as needed */
+}
+
+.hero {
+    flex: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+@keyframes slide {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(0);
+    }
+    33.33% {
+        transform: translateX(-100%);
+    }
+    53.33% {
+        transform: translateX(-100%);
+    }
+    66.66% {
+        transform: translateX(-200%);
+    }
+    86.66% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(-300%);
+    }
+}
+
+
+
+
+
 body {
     margin: 0
 }
