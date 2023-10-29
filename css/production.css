@@ -85,7 +85,7 @@ hr {
 }
 
 pre {
-    font-family: NanumGothicCoding, sans-serif;
+    font-family: 'Encode Sans', sans-serif;
     font-size: 1em
 }
 
@@ -115,7 +115,7 @@ strong {
 code,
 kbd,
 samp {
-    font-family: NanumGothicCoding, sans-serif;
+    font-family: 'Encode Sans', sans-serif;
     font-size: 1em
 }
 
@@ -171,7 +171,7 @@ input,
 optgroup,
 select,
 textarea {
-    font-family: NanumGothicCoding, sans-serif;
+    font-family: 'Encode Sans', sans-serif;
     font-size: 100%;
     line-height: 1.15;
     margin: 0
@@ -479,7 +479,7 @@ svg {
 html {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    font-family: NanumGothicCoding, sans-serif;
+    font-family: 'Encode Sans', sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -534,7 +534,7 @@ img::-moz-selection {
     border-width: 1px;
     cursor: pointer;
     display: inline-block;
-    font-family: NanumGothicCoding, sans-serif;
+    font-family: 'Encode Sans', sans-serif;
     font-size: 1rem;
     letter-spacing: 1px;
     font-weight: 700;
@@ -668,7 +668,7 @@ video {
     border-radius: 3px;
     color: #444a52;
     display: block;
-    font-family: NanumGothicCoding, sans-serif;
+    font-family: 'Encode Sans', sans-serif;
     font-size: 1rem;
     line-height: 1.6rem;
     max-width: 100%;
@@ -729,7 +729,7 @@ video {
     color: #444a52;
     cursor: pointer;
     display: inline-block;
-    font-family: NanumGothicCoding,sans-serif;
+    font-family: 'Encode Sans', sans-serif;
     line-height: 1.6rem;
     margin: 0;
     outline: 0;
@@ -1135,7 +1135,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: NanumGothicCoding, serif;
+    font-family: 'Encode Sans', sans-serif;
     font-weight: 700;
     line-height: 1;
     margin-top: 0;
@@ -1175,7 +1175,7 @@ hr {
 
 .blockquote {
     border-left: 4px solid #9fa5af;
-    font-family: NanumGothicCoding, sans-serif;
+    font-family: 'Encode Sans', sans-serif;
     font-size: 1.333rem;
     font-style: italic;
     max-width: 100%;
@@ -1225,15 +1225,15 @@ hr {
 }
 
 .font--heading {
-    font-family: NanumGothicCoding, serif
+    font-family: 'Encode Sans', sans-serif;
 }
 
 .font--reading {
-    font-family: NanumGothicCoding, serif
+    font-family: 'Encode Sans', sans-serif;
 }
 
 .font--ui {
-    font-family: NanumGothicCoding, sans-serif
+    font-family: 'Encode Sans', sans-serif;
 }
 
 .border--full {
